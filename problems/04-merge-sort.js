@@ -28,7 +28,7 @@ function mergeSort(array) {
   if(array.length <=1){
     return array
   }
-  let mid= array.length/2
+  let mid= Math.floor(array.length/2)
   let left = array.slice(0,mid)
   let right = array.slice(mid)
   let leftHalf = mergeSort(left)

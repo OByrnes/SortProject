@@ -7,14 +7,14 @@ function quickSort(array) {
   }
   
   // recursive case
-  let pivot = array[0];
+  let pivot = array.shift()
   let left = []; 
   let right = []; 
 
   array.forEach((ele) => {
     if (ele < pivot) {
       left.push(ele);
-    } else if (ele > pivot) {
+    } else if (ele >= pivot) {
       right.push(ele);
     }
   });
