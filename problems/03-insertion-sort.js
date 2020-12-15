@@ -9,7 +9,7 @@ function insertionSort(list) {
       if (list[i] < list[i-1]) {
         let deleted = list.splice(i-1, 2, list[i], list[i-1]);
 
-        console.log(deleted);
+      
       }
     }
     position++;
